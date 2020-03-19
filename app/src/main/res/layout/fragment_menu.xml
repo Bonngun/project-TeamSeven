@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#948bb6"
+    tools:context=".menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="100dp"
+                android:layout_height="92dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_profile"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:autoText="false"
+                android:text="Name"
+                android:textSize="24sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="right|left"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/tasks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:background="#5A5479"
+                    android:text="TASKS"
+                    />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/graph"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#5A5479"
+                    android:text="GRAPH" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/login_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_gravity="right"
+                    android:background="#5A5479"
+                    android:text="logout" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recy_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="994dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
+
